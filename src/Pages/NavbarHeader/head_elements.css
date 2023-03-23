@@ -1,4 +1,20 @@
 .head{
-    opacity: 0.5;
-    z-index: 2;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+
+
+.head_shade{
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.head_shade:hover{
+    opacity: 0.6;
+}
+
+.head_logotype{
+    width: 350px;
+    cursor: pointer;
 }

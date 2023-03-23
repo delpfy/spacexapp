@@ -1,10 +1,10 @@
 .banner_img{
     height: 100%;
     width: 100%;
-    
+    object-fit: cover
 }
 
 .banner_shade{
-    opacity: 0.3;
+    opacity: 0.6;
     
 }
