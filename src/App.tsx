@@ -8,11 +8,11 @@ import { NotFound } from "./Pages/NotFound/NotFound";
 export default function App() {
   return (
     <>
-      <Head/>
+      <Head />
       <Routes>
-        <Route path="/spacex/home" element={<Home/>} />
-        <Route path="/spacex/favorites" element={<Favorites/>} />
-        <Route path="*" element={<NotFound/>} />
+        <Route path="/spacex/home" element={<Home />} />
+        <Route path="/spacex/favorites" element={<Favorites />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

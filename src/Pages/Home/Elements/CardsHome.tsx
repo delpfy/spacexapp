@@ -5,6 +5,7 @@ import React from "react";
 import card1_img from "../../../img/card1.png";
 import card2_img from "../../../img/card2.png";
 import card3_img from "../../../img/card3.png";
+import Carousel from "react-material-ui-carousel";
 
 export const Cards = () => {
   return (
@@ -20,42 +21,113 @@ export const Cards = () => {
           >
             Popular tours
           </Typography>
-
-          <Grid container spacing={1} sx={{ padding: 10, paddingTop: 1 }}>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Cardx image={card1_img} />
+          <Carousel sx={{ width: "100%" }}>
+            <Grid container spacing={1} sx={{ padding: 10, paddingTop: 1 }}>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card1_img} />
+              </Grid>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card2_img} />
+              </Grid>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card3_img} />
+              </Grid>
             </Grid>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Cardx image={card2_img} />
+            <Grid container spacing={1} sx={{ padding: 10, paddingTop: 1 }}>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card2_img} />
+              </Grid>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card3_img} />
+              </Grid>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card1_img} />
+              </Grid>
             </Grid>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Cardx image={card3_img} />
+            <Grid container spacing={1} sx={{ padding: 10, paddingTop: 1 }}>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card3_img} />
+              </Grid>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card1_img} />
+              </Grid>
+              <Grid
+                item
+                md={4}
+                sm={6}
+                xs={12}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Cardx image={card2_img} />
+              </Grid>
             </Grid>
-          </Grid>
+          </Carousel>
         </Box>
       </Box>
     </>
