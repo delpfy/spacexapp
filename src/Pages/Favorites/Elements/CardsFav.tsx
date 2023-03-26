@@ -11,41 +11,7 @@ export const Cards = () => {
     <>
       <Box height={700} width={"100%"}>
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-          <Grid container spacing={1} sx={{ padding: 10, paddingTop: 10 }}>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Cardx image={card1_img} />
-            </Grid>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Cardx image={card2_img} />
-            </Grid>
-            <Grid
-              item
-              md={4}
-              sm={6}
-              xs={12}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Cardx image={card3_img} />
-            </Grid>
-          </Grid>
+          
         </Box>
       </Box>
     </>

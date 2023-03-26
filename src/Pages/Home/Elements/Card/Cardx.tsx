@@ -6,27 +6,36 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import { Box } from "@mui/system";
 import { IconButton } from "@mui/material";
 
 interface CardProps {
   image: string;
+  type: string;
+  id: string;
+  name: string;
+  description: string
 }
 
 export default function Cardx(props: CardProps) {
   const [clicked, setClicked] = React.useState<boolean>(false);
 
   return (
-    <Card sx={{ maxWidth: 375, height: 500 }}>
+    <Card sx={{ maxWidth: 375, height: 550 }}>
       <CardMedia sx={{ height: 270 }} image={props.image} />
       <Box
         height={230}
         display={"flex"}
         flexDirection={"column"}
-        justifyContent={"space-around"}
+        justifyContent={"space-between"}
+        minHeight={270}
+        maxHeight={270}
         alignItems={"center"}
       >
-        <CardContent>
+        <CardContent
+        sx = {{paddingTop: "5%"}}
+        >
           <Typography
             gutterBottom
             variant="h5"
@@ -34,14 +43,14 @@ export default function Cardx(props: CardProps) {
             textAlign={"center"}
             textTransform={"uppercase"}
           >
-            Extraordinary tour
+            {props.name}
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
             textAlign={"center"}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            {props.description}
           </Typography>
         </CardContent>
         <CardActions>
@@ -60,10 +69,22 @@ export default function Cardx(props: CardProps) {
             BUY
           </Button>
           <IconButton onClick={() => setClicked(!clicked)}>
-            <FavoriteBorderIcon
+            {props.type === "main" ? 
+             (
+              <FavoriteBorderIcon
               sx={{ height: 35, width: 35 }}
               color={clicked ? "secondary" : "disabled"}
             />
+            ) 
+            :
+            (
+              <DeleteForeverIcon
+              sx={{ height: 35, width: 35 }}
+              color={clicked ? "secondary" : "disabled"}
+            />
+            ) 
+            }
+            
           </IconButton>
         </CardActions>
       </Box>

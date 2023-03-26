@@ -1,0 +1,51 @@
+{
+  "data": {
+    "rockets": [
+      {
+        "id": "falcon1",
+        "description": "The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.",
+        "name": "Falcon 1"
+      },
+      {
+        "id": "falcon9",
+        "description": "Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit. Falcon 9 is the world’s first orbital class reusable rocket.",
+        "name": "Falcon 9"
+      },
+      {
+        "id": "falconheavy",
+        "description": "Falcon Heavy is the most powerful operational rocket in the world by a factor of two. It was designed from the outset to carry humans into space and restores the possibility of flying missions with crew to the Moon or Mars.",
+        "name": "Falcon Heavy"
+      },
+      {
+        "id": "delta4",
+        "description": "Delta IV is a family of expendable rockets that has been in service since 2002. The Delta IV family uses liquid hydrogen and liquid oxygen propellants to power its main engines.",
+        "name": "Delta IV"
+      },
+      {
+        "id": "atlas5",
+        "description": "Atlas V is a two-stage rocket designed and manufactured by Lockheed Martin and Boeing for the reliable and cost-effective transport of satellites and other payloads into space.",
+        "name": "Atlas V"
+      },
+      {
+        "id": "soyuz",
+        "description": "The Soyuz launch vehicle is the most frequently used and reliable launch vehicle in the world. It has been in operation for over 50 years and has a success rate of over 97%.",
+        "name": "Soyuz"
+      },
+      {
+        "id": "ariane5",
+        "description": "Ariane 5 is a heavy-lift launch vehicle that is designed to carry payloads weighing up to 21 metric tons into orbit. It has been in service since 1996 and has a success rate of over 96%.",
+        "name": "Ariane 5"
+      },
+      {
+        "id": "electron",
+        "description": "Electron is a two-stage rocket designed and manufactured by Rocket Lab for the reliable and cost-effective transport of small satellites into orbit. It is currently the second most frequently launched rocket in the world.",
+        "name": "Electron"
+      },
+      {
+        "id": "long-march-5",
+        "description": "Long March 5 is a heavy-lift launch vehicle designed and manufactured by China Aerospace Science and Technology Corporation (CASC) for the reliable and cost-effective transport of large payloads into space. It has a lifting capacity of up to 25 metric tons to low Earth orbit.",
+        "name": "Long March 5"
+      }
+    ]
+  }
+}

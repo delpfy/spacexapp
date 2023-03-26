@@ -4,6 +4,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import React from 'react'
 
 export const ScrollerDown = () => {
+  
   return (
     <Box
     display={'flex'}
@@ -11,6 +12,8 @@ export const ScrollerDown = () => {
     top={" 92%"}
     left={"43%"}
     position = {'absolute'}
+    sx = {{zIndex: 3}}
+
     >
         <Typography
           variant="h1"

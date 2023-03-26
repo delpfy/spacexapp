@@ -6,7 +6,6 @@ import banner1 from "../../../img/banner_home.png";
 import banner2 from "../../../img/card2.png";
 import banner3 from "../../../img/card3.png";
 import "./home_elems.css";
-import { ScrollerDown } from "./Scroller/ScrollerDown";
 import Carousel from "react-material-ui-carousel";
 
 
@@ -54,7 +53,6 @@ export const Banner = () => {
         </Typography>
         
 
-        <ScrollerDown/>
 
       </Box>
 
@@ -71,7 +69,6 @@ export const Banner = () => {
        
         
 
-        <ScrollerDown/>
 
       </Box>
       <Box height={700} width={"100%"}>
@@ -87,7 +84,6 @@ export const Banner = () => {
        
         
 
-        <ScrollerDown/>
 
       </Box>
     </Carousel>
