@@ -21,7 +21,9 @@ export const Banner = () => {
           position={"absolute"}
           color={"#fff"}
           top={" 30%"}
-          left={"35%"}
+          left={"25%"}
+          fontFamily={'Syne'}
+          fontSize={80}
         >
           FAVORITES
         </Typography>

@@ -73,6 +73,9 @@ export default function Cardx({id, name, description, image, type}: CardProps) {
             component="div"
             textAlign={"center"}
             textTransform={"uppercase"}
+            fontFamily={'Syne'}
+            fontWeight={700}
+            fontSize={18}
           >
             {name}
           </Typography>
@@ -80,6 +83,9 @@ export default function Cardx({id, name, description, image, type}: CardProps) {
             variant="body2"
             color="text.secondary"
             textAlign={"center"}
+            fontFamily={'Lato'}
+            fontWeight={300}
+            fontSize={15}
           >
             {description}
           </Typography>
@@ -92,6 +98,8 @@ export default function Cardx({id, name, description, image, type}: CardProps) {
               height: 50,
               background: "#D3EAFF",
               color: "black",
+              fontFamily: 'Syne, sans-serif',
+                  fontWeight: 600,
               ":hover": {
                 background: "#acd5fa",
               },

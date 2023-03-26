@@ -35,8 +35,11 @@ export const Banner = () => {
           component="h2"
           position={"absolute"}
           color={"#fff"}
-          top={" 25%"}
-          left={"12%"}
+          fontSize={48}
+          top={" 28%"}
+          left={"14%"}
+          
+          fontFamily={'Syne'}
         >
           THE SPACE IS WAITING FOR
         </Typography>
@@ -45,9 +48,12 @@ export const Banner = () => {
           component="h2"
           position={"absolute"}
           color={"#fff"}
-          fontSize={400}
+          fontSize={300}
           top={" 30%"}
-          left={"25%"}
+          left={"15%"}
+          
+
+          fontFamily={'Syne'}
         >
           YOU
         </Typography>

@@ -53,6 +53,7 @@ export const Cards = () => {
           variant="h1"
           component="h2"
           fontSize={30}
+          fontFamily={'Lato'}
           color={"#fff"}
           sx={{ textDecoration: "underline", cursor: "pointer" }}
           onClick={() => {
@@ -63,7 +64,7 @@ export const Cards = () => {
         </Typography>
         <ArrowDownwardIcon
           color="info"
-          sx={{ height: "35px", width: "45px" }}
+          sx={{ height: "33px", width: "43px" }}
         />
       </Box>
 
@@ -75,9 +76,11 @@ export const Cards = () => {
             width={"95.5%"}
             variant="h2"
             component="h2"
+            fontFamily={'Syne'}
+            fontSize={36}
             ref={ref}
           >
-            Popular tours
+            POPULAR TOURS
           </Typography>
           <Carousel sx={{ width: "100%" }}>
             {data.rockets.map(

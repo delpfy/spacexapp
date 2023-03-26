@@ -65,10 +65,13 @@ export const Head = () => {
 
               <Button
                 variant="contained"
+                
                 sx={{
                   width: 230,
                   height: 50,
                   background: "#D3EAFF",
+                  fontFamily: 'Syne, sans-serif',
+                  fontWeight: 600,
                   color: "black",
                   ":hover": {
                     background: "#acd5fa",
