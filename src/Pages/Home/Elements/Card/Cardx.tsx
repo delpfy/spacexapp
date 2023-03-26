@@ -7,8 +7,12 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import {useRecoilState} from 'recoil';
 import { Box } from "@mui/system";
 import { IconButton } from "@mui/material";
+import { favoriteItems } from "../../../../recoil/favoritesAtom";
+import { useRecoilValue } from "recoil";
+import { useEffect } from "react";
 
 interface CardProps {
   image: string;
@@ -18,12 +22,39 @@ interface CardProps {
   description: string
 }
 
-export default function Cardx(props: CardProps) {
+
+
+export default function Cardx({id, name, description, image, type}: CardProps) {
   const [clicked, setClicked] = React.useState<boolean>(false);
+
+  const [favs, setFavs] = useRecoilState(favoriteItems);
+  const favoritesId = useRecoilValue(favoriteItems);
+  useEffect(() => {
+    favoritesId.map((fav) =>{
+      if(fav.id === id){
+        console.log("eqation " + (fav.id === id));
+        return setClicked(true);
+  
+      }
+    })
+  }, [])
+  
+  const handleClick = () =>{
+    
+    setClicked(!clicked)
+    type === "fav" 
+    ? 
+    setFavs(favs.filter(elem => elem.id !== id))
+    :
+    !clicked ? setFavs([...favs,{id, name, description, image}]) : setFavs(favs.filter(elem => elem.id !== id)) ;
+    
+    console.log("FAVS " + favs);
+    
+  }
 
   return (
     <Card sx={{ maxWidth: 375, height: 550 }}>
-      <CardMedia sx={{ height: 270 }} image={props.image} />
+      <CardMedia sx={{ height: 270 }} image={image} />
       <Box
         height={230}
         display={"flex"}
@@ -43,14 +74,14 @@ export default function Cardx(props: CardProps) {
             textAlign={"center"}
             textTransform={"uppercase"}
           >
-            {props.name}
+            {name}
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
             textAlign={"center"}
           >
-            {props.description}
+            {description}
           </Typography>
         </CardContent>
         <CardActions>
@@ -68,8 +99,8 @@ export default function Cardx(props: CardProps) {
           >
             BUY
           </Button>
-          <IconButton onClick={() => setClicked(!clicked)}>
-            {props.type === "main" ? 
+          <IconButton onClick={() => handleClick()}>
+            {type === "main" ? 
              (
               <FavoriteBorderIcon
               sx={{ height: 35, width: 35 }}
