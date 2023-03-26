@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0443ce1.css",
-    "main.js": "/static/js/main.2a51aa06.js",
-    "static/media/banner_home.png": "/static/media/banner_home.a7724e5b0282984e822e.png",
-    "static/media/card1.png": "/static/media/card1.a7724e5b0282984e822e.png",
-    "static/media/card2.png": "/static/media/card2.34007dd3afa5ee772384.png",
-    "static/media/banner_fav.png": "/static/media/banner_fav.827c7d86992413c7c2f5.png",
-    "static/media/card3.png": "/static/media/card3.827c7d86992413c7c2f5.png",
-    "static/media/logo.png": "/static/media/logo.564be1b8434b7275ee64.png",
-    "index.html": "/index.html",
-    "main.e0443ce1.css.map": "/static/css/main.e0443ce1.css.map",
-    "main.2a51aa06.js.map": "/static/js/main.2a51aa06.js.map"
+    "main.css": "/spacexapp/static/css/main.e0443ce1.css",
+    "main.js": "/spacexapp/static/js/main.1002846a.js",
+    "static/media/banner_home.png": "/spacexapp/static/media/banner_home.a7724e5b0282984e822e.png",
+    "static/media/card1.png": "/spacexapp/static/media/card1.a7724e5b0282984e822e.png",
+    "static/media/card2.png": "/spacexapp/static/media/card2.34007dd3afa5ee772384.png",
+    "static/media/banner_fav.png": "/spacexapp/static/media/banner_fav.827c7d86992413c7c2f5.png",
+    "static/media/card3.png": "/spacexapp/static/media/card3.827c7d86992413c7c2f5.png",
+    "static/media/logo.png": "/spacexapp/static/media/logo.564be1b8434b7275ee64.png",
+    "index.html": "/spacexapp/index.html",
+    "main.e0443ce1.css.map": "/spacexapp/static/css/main.e0443ce1.css.map",
+    "main.1002846a.js.map": "/spacexapp/static/js/main.1002846a.js.map"
   },
   "entrypoints": [
     "static/css/main.e0443ce1.css",
-    "static/js/main.2a51aa06.js"
+    "static/js/main.1002846a.js"
   ]
 }
