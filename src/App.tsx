@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Head />
       <Routes>
-        <Route path="/spacexapp/home" element={<Home />} />
+        <Route path="/spacexapp" element={<Home />} />
         <Route path="/spacexapp/favorites" element={<Favorites />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

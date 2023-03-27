@@ -2,7 +2,7 @@
   "name": "spacexapp",
   "version": "0.1.0",
   "private": true,
-  "home": "https://delpfy.github.io/spacexapp/",
+  "homepage": "https://delpfy.github.io/spacexapp/",
   "dependencies": {
     "@apollo/client": "^3.7.10",
     "@emotion/react": "^11.10.6",

@@ -33,7 +33,7 @@ export const Head = () => {
               src={logotype}
               alt="header_logotype_img"
               className="head_logotype"
-              onClick={() => (navigate("/spacexapp/home"), setClicked(false))}
+              onClick={() => (navigate("/spacexapp"), setClicked(false))}
             />
 
             <Box>
@@ -53,13 +53,13 @@ export const Head = () => {
               alignItems={"center"}
             >
               <IconButton
-                onClick={() => setClicked(!clicked)}
+                onClick={() => (setClicked(!clicked), navigate("/spacexapp/favorites"))}
                 disabled={clicked ? true : false}
               >
                 <FavoriteTwoToneIcon
                   sx={{ height: 45, width: 45 }}
                   color={clicked ? "secondary" : "info"}
-                  onClick={() => navigate("/spacexapp/favorites")}
+                  
                 />
               </IconButton>
 
