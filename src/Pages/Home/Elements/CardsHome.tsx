@@ -1,14 +1,7 @@
-import {
-  Box,
-
-  Grid,
-  LinearProgress,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, LinearProgress, Typography } from "@mui/material";
 import Cardx from "./Card/Cardx";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-import React, { useRef } from "react";
+import React from "react";
 
 import card1_img from "../../../img/card1.png";
 import card2_img from "../../../img/card2.png";
@@ -24,12 +17,6 @@ interface RocketItem {
 }
 
 export const Cards = () => {
-  const ref = useRef<null | HTMLInputElement>(null);
-  const scrollToElement = () => {
-    console.log("CLICKED");
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   const { loading, error, data } = useQuery(ALL_ITEMS);
   if (error) {
     return <Typography variant="h1">{error.message}</Typography>;
@@ -41,10 +28,11 @@ export const Cards = () => {
 
   return (
     <>
-      <Box
+      <Box height={820} width={"100%"}>
+        {/* <Box
         display={"flex"}
         alignItems={"center"}
-        top={" 92%"}
+        
         left={"43%"}
         position={"absolute"}
         sx={{ zIndex: 3 }}
@@ -56,6 +44,7 @@ export const Cards = () => {
           fontFamily={'Lato'}
           color={"#fff"}
           sx={{ textDecoration: "underline", cursor: "pointer" }}
+          
           onClick={() => {
             scrollToElement();
           }}
@@ -66,9 +55,7 @@ export const Cards = () => {
           color="info"
           sx={{ height: "33px", width: "43px" }}
         />
-      </Box>
-
-      <Box height={720} width={"100%"}>
+      </Box> */}
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
           <Typography
             padding={10}
@@ -76,19 +63,19 @@ export const Cards = () => {
             width={"95.5%"}
             variant="h2"
             component="h2"
-            fontFamily={'Syne'}
+            fontFamily={"Syne"}
             fontSize={36}
-            ref={ref}
           >
             POPULAR TOURS
           </Typography>
+
           <Carousel sx={{ width: "100%" }}>
             {data.rockets.map(
               (rocket: RocketItem, index: number, array: RocketItem[]) => {
                 const RemainingCards = array.filter(
                   (elem) => elem.name !== rocket.name
                 );
-                
+
                 return (
                   <Grid
                     container
