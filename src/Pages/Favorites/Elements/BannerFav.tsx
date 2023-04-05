@@ -6,27 +6,38 @@ import banner from "../../../img/banner_fav.png";
 export const Banner = () => {
   return (
     <>
-      <Box height={500} width={"100%"}>
+      <Box height={500}>
         <Box
           height={500}
           width={"100%"}
-          sx={{ backgroundColor: "black" }}
-          className="banner_shade"
+          className="banner_fav"
           position={"absolute"}
         />
-        <img src={banner} alt="home_banner_img" className="banner_img"></img>
-        <Typography
-          variant="h1"
-          component="h2"
-          position={"absolute"}
-          color={"#fff"}
-          top={" 30%"}
-          left={"25%"}
-          fontFamily={'Syne'}
-          fontSize={80}
+        <Box
+          height={500}
+          width={"100%"}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
         >
-          FAVORITES
-        </Typography>
+          <Box className="banner_content">
+            <Typography
+              variant="h1"
+              component="h2"
+              color={"#fff"}
+              fontSize={63}
+              paddingTop={23}
+              fontFamily={"Syne"}
+            >
+              FAVORITES
+            </Typography>
+            
+          </Box>
+
+          
+         
+        </Box>
       </Box>
     </>
   );

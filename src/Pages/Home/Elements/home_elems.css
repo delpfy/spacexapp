@@ -1,8 +1,44 @@
-.banner_img {
-  height: 100%;
+.banner_img1 {
+  
   width: 100%;
-  object-fit: cover;
+  background-size: cover;
+  filter: brightness(50%);
+  background-image: url('../../../img/banner_home.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.banner_fav {
+  width: 100%;
+  background-size: cover;
+  filter: brightness(50%);
+  background-image: url('../../../img/card3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner_img2 {
+
+  width: 100%;
+  background-size: cover;
+  filter: brightness(50%);
+  background-image: url('../../../img/card2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner_img3 {
+
+  width: 100%;
+  background-size: cover;
+  filter: brightness(50%);
+  background-image: url('../../../img/card3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner_content {
+  filter: brightness(100%);
+}
+
 
 .banner_shade {
   opacity: 0.6;
