@@ -56,18 +56,39 @@ export const Cards = () => {
           sx={{ height: "33px", width: "43px" }}
         />
       </Box> */}
-        <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
+        <Box display={"flex"} flexDirection={"column"} alignItems={"flex-start"}>
+          <Box
+          padding={10}
+          paddingBottom={4}
+         
+          sx = {{
+            paddingLeft: {
+              xs :'9%',
+              md : '7%',
+            }
+          }}
+          width={730}
+          
+          >
           <Typography
-            padding={10}
-            paddingBottom={4}
-            width={"95.5%"}
+            
+            
             variant="h2"
             component="h2"
             fontFamily={"Syne"}
-            fontSize={36}
+            sx = {{
+              fontSize: {
+                xs : 21,
+                md : 36,
+              }
+            }}
+            
+            
           >
             POPULAR TOURS
           </Typography>
+          </Box>
+          
 
           <Carousel sx={{ width: "100%" }}>
             {data.rockets.map(
@@ -79,17 +100,22 @@ export const Cards = () => {
                 return (
                   <Grid
                     container
-                    spacing={1}
+                    
                     sx={{ padding: 10, paddingTop: 1 }}
+                    spacing={{ xs: 1, sm: 4, md: 4, lg: 4, xl: 4  }}
+          columns={{ xs: 2, sm: 4, md: 8, lg: 12, xl: 12 }}
                   >
                     <Grid
                       item
-                      md={4}
-                      sm={6}
-                      xs={12}
+                      xs={2}
+                sm={4}
+                md={4}
+                lg={4}
+                xl={4}
                       display={"flex"}
                       justifyContent={"center"}
                       alignItems={"center"}
+                      padding={0}
                     >
                       <Cardx
                         image={card1_img}
@@ -113,9 +139,11 @@ export const Cards = () => {
                     </Grid>
                     <Grid
                       item
-                      md={4}
-                      sm={6}
-                      xs={12}
+                      xs={2}
+                sm={4}
+                md={4}
+                lg={4}
+                xl={4}
                       display={"flex"}
                       justifyContent={"center"}
                       alignItems={"center"}
@@ -142,9 +170,11 @@ export const Cards = () => {
                     </Grid>
                     <Grid
                       item
-                      md={4}
-                      sm={6}
-                      xs={12}
+                      xs={2}
+                      sm={4}
+                       md={4}
+                      lg={4}
+                      xl={4}
                       display={"flex"}
                       justifyContent={"center"}
                       alignItems={"center"}

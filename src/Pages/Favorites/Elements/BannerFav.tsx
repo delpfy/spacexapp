@@ -26,7 +26,14 @@ export const Banner = () => {
               variant="h1"
               component="h2"
               color={"#fff"}
-              fontSize={63}
+              sx = {{
+                fontSize:{
+                  xs: 38,
+                  sm: 55,
+                  md: 61,
+                  lg : 65
+                }
+              }}
               paddingTop={23}
               fontFamily={"Syne"}
             >

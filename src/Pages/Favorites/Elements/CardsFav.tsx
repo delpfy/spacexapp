@@ -45,14 +45,19 @@ export const Cards = () => {
         </Typography>
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
 
-          <Grid container spacing={1} sx={{ padding: 10, paddingTop: 5}}>
+          <Grid container 
+          spacing={{ xs: 1, sm: 4, md: 4, lg: 4, xl: 4  }}
+          columns={{ xs: 2, sm: 4, md: 8, lg: 12, xl: 12 }}
+            sx={{ padding: 10, paddingTop: 5}}>
             {favoritesId.map((fav) => {
               return (
                 <Grid
                   item
+                  xs={2}
+                  sm={4}
                   md={4}
-                  sm={6}
-                  xs={12}
+                  lg={4}
+                  xl={4}
                   display={"flex"}
                   justifyContent={"center"}
                   alignItems={"center"}

@@ -53,7 +53,7 @@ export default function Cardx({id, name, description, image, type}: CardProps) {
   }
 
   return (
-    <Card sx={{ maxWidth: 375, height: 550 }}>
+    <Card sx={{ maxWidth: 375, minWidth: 345, height: 550 }}>
       <CardMedia sx={{ height: 270 }} image={image} />
       <Box
         height={230}
