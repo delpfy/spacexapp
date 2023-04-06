@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spacexapp/static/css/main.f49df0d7.css",
-    "main.js": "/spacexapp/static/js/main.5259b137.js",
+    "main.js": "/spacexapp/static/js/main.db1fc951.js",
     "static/media/banner_home.png": "/spacexapp/static/media/banner_home.a7724e5b0282984e822e.png",
     "static/media/card1.png": "/spacexapp/static/media/card1.a7724e5b0282984e822e.png",
     "static/media/card2.png": "/spacexapp/static/media/card2.34007dd3afa5ee772384.png",
@@ -9,10 +9,10 @@
     "static/media/logo.png": "/spacexapp/static/media/logo.564be1b8434b7275ee64.png",
     "index.html": "/spacexapp/index.html",
     "main.f49df0d7.css.map": "/spacexapp/static/css/main.f49df0d7.css.map",
-    "main.5259b137.js.map": "/spacexapp/static/js/main.5259b137.js.map"
+    "main.db1fc951.js.map": "/spacexapp/static/js/main.db1fc951.js.map"
   },
   "entrypoints": [
     "static/css/main.f49df0d7.css",
-    "static/js/main.5259b137.js"
+    "static/js/main.db1fc951.js"
   ]
 }
