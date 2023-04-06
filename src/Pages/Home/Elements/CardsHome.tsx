@@ -67,7 +67,7 @@ export const Cards = () => {
               md : '7%',
             }
           }}
-          width={730}
+          width={'100%'}
           
           >
           <Typography
